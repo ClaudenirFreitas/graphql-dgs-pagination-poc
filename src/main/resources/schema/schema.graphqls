@@ -1,0 +1,7 @@
+type Query {
+    hello(first: Int, last: Int): MessageConnection
+}
+
+type Message @connection {
+    name: String
+}
